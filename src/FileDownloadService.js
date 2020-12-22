@@ -17,6 +17,7 @@ class FileDownloadService {
   async downloadAndAddTo(node) {
     switch(node.object) {
       case 'product':
+      case 'price':
       case 'sku':
         return this.downloadFiles(node);
       default:
